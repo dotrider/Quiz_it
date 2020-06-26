@@ -3,7 +3,7 @@ import Cards from '../Cards/Cards'
 
 const Display = ({cards}) => {
 
-const mappedData = cards.map(question => <Cards key={question.id} question={question}/>)
+const mappedData = cards.map(card => <Cards key={card.id} card={card}/>)
     return (
         <div>
            {mappedData}
