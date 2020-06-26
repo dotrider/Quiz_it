@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Display from './Components/Display/Display'
 import axios from 'axios'
-import data from './Data'
+// import data from './Data'
 import './App.css';
 
 function App() {
