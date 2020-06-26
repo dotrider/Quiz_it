@@ -5,7 +5,7 @@ const Display = ({cards}) => {
 
 const mappedData = cards.map(card => <Cards key={card.id} card={card}/>)
     return (
-        <div>
+        <div className='card-container'>
            {mappedData}
         </div>
     )

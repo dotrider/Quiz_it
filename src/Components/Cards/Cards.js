@@ -4,7 +4,7 @@ const Cards = ({card}) => {
     const [ toggle, setToggle ] = useState(Boolean)
 
 
-    const mappedOptions = card.options.map(option => <div>{option}</div>)
+    const mappedOptions = card.options.map(option => <div key={option} className='card-options'>{option}</div>)
     return (
         <div 
         className={`card ${toggle ? 'flip': ''}`}
@@ -13,7 +13,7 @@ const Cards = ({card}) => {
 
             <div className='question'>
                 {card.question}
-                <div>
+                <div className='card-option'>
                     {mappedOptions}
                 </div>
             </div>
